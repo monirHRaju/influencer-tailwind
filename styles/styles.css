@@ -3,11 +3,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+/* .container {
   max-width: 1110px;
-  margin: 50px auto;
+  margin: 100px auto;
   border-bottom: 1px solid gray;
-}
+} */
 
 /* shared styles */
 .poppins-regular {
