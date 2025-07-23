@@ -78,7 +78,7 @@
     <main>
       <!-- sponsored -->
       <section
-        class="flex items-center max-w-[1110px] mx-auto my-[100px] justify-around"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 max-w-[1110px] mx-auto my-[100px]"
       >
         <img class="h-[35px]" src="./logos/Alibaba.svg" alt="" />
         <img class="h-[35px]" src="./logos/Amazon.svg" alt="" />
@@ -90,22 +90,49 @@
       </section>
 
       <!-- product card section -->
-      <h1>Popular Collection</h1>
-      <div class="cards">
-        <div>
-          <img src="./images/action.png" alt="" />
-          <h3>Flex Tripod</h3>
-          <h4>$50.48</h4>
-          <div class="stars">
-            <img src="./images/star" alt="" />
-            <
+      <section>
+        <h1 class="text-3xl text-center font-semibold text-[#3A3A3A] mb-8">Popular Collection</h1>
+        <div class="cards grid grid-cols-1 md:lg:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="card rounded-lg p-2.5 drop-shadow-md">
+            <img src="./images/action.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium">Flex Tripod</h3>
+            <h4>$50.48</h4>
+            <div class="text-2xl text-[#3A3A3A] font-normal font-inter">
+              <img src="./images/star" class="rounded-lg" alt="" />
+            </div>
+            <p>
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
           </div>
-          <p>
-            Wordwide shifting <br />
-            available <br />Buyers protection possible!
-          </p>
+
+          <div class="card border-2 border-gray-300 rounded-lg p-2.5">
+            <img src="./images/action.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium">Flex Tripod</h3>
+            <h4>$50.48</h4>
+            <div class="text-2xl text-[#3A3A3A] font-normal font-inter">
+              <img src="./images/star" class="rounded-lg" alt="" />
+            </div>
+            <p>
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+
+          <div class="card border-2 border-gray-300 rounded-lg p-2.5">
+            <img src="./images/action.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium">Flex Tripod</h3>
+            <h4>$50.48</h4>
+            <div class="text-2xl text-[#3A3A3A] font-normal font-inter">
+              <img src="./images/star" class="rounded-lg" alt="" />
+            </div>
+            <p>
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>

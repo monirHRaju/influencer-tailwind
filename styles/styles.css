@@ -4,6 +4,7 @@ body {
 }
 section {
   margin: 150px auto;
+  max-width: 1110px;
 }
 /* .container {
   max-width: 1110px;
@@ -32,4 +33,13 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* common styles */
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
