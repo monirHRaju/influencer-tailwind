@@ -31,7 +31,7 @@
     <header>
       <!-- navbar section -->
       <nav
-        class="bg-white-400 flex justify-between items-center p-5 bg-white shadow max-w-[1440px] m-auto"
+        class="bg-white-400 flex flex-col lg:justify-between md:justify-between items-center p-5 bg-white shadow max-w-[1440px] m-auto"
       >
         <a href="#" class="cursor-pointer"
           ><h1 class="text-2xl text-[24px] font-semibold">
@@ -40,7 +40,7 @@
         >
 
         <div class="">
-          <ul class="flex gap-6 font-medium">
+          <ul class="text-center md:flex lg:flex gap-6 font-medium">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Sign up</a></li>
@@ -52,8 +52,8 @@
       </nav>
 
       <!-- hero section -->
-      <div class="hero flex items-center max-w-[1110px] mx-auto my-[150px]">
-        <div class="hero-left flex-1">
+      <div class="hero sm:flex md:flex lg:flex lg:flex-row md:flex-row sm:flex-col items-center max-w-[1110px] mx-auto md:my-[150px] lg:my-[150px] p-5">
+        <div class="hero-left flex-1 order-2">
           <h1 class="text-5xl font-bold text-[#3A3A3A] leading-[1.5]">
             Start your Journey as <br />
             Influencer
@@ -69,7 +69,7 @@
             <span class="ml-3"><i class="fa-solid fa-arrow-right"></i></span>
           </button>
         </div>
-        <div class="hero-right flex-1">
+        <div class="hero-right flex-1 order-1">
           <img class="banner-image" src="./images/Circle design.svg" alt="" />
           <img class="banner-image" src="./images/main-camera.png" alt="" />
         </div>
@@ -78,7 +78,7 @@
     <main>
       <!-- sponsored -->
       <section
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 max-w-[1110px] mx-auto my-[100px]"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 max-w-[1110px] mx-auto my-[100px] p-8 gap-y-8"
       >
         <img class="h-[35px]" src="./logos/Alibaba.svg" alt="" />
         <img class="h-[35px]" src="./logos/Amazon.svg" alt="" />
@@ -90,48 +90,166 @@
       </section>
 
       <!-- product card section -->
-      <section>
-        <h1 class="text-3xl text-center font-semibold text-[#3A3A3A] mb-8">Popular Collection</h1>
-        <div class="cards grid grid-cols-1 md:lg:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div class="card rounded-lg p-2.5 drop-shadow-md">
+      <section class="p-8">
+        <h1 class="text-4xl text-center font-semibold text-[#3A3A3A] mb-8">Popular Collection</h1>
+        <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
             <img src="./images/action.png" class="w-full" alt="" />
-            <h3 class="text-3xl text-[#3A3A3A] font-medium">Flex Tripod</h3>
-            <h4>$50.48</h4>
-            <div class="text-2xl text-[#3A3A3A] font-normal font-inter">
-              <img src="./images/star" class="rounded-lg" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
             </div>
-            <p>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300 ">
+            <img src="./images/mic.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
+            <img src="./images/setup.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
+            <img src="./images/single-light.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
+            <img src="./images/airpod.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
+            <img src="./images/camera.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
+            <img src="./images/drone.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
+            <img src="./images/single-light.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
+              Wordwide shifting <br />
+              available <br />Buyers protection possible!
+            </p>
+          </div>
+          <div class="card shadow-lg rounded-lg p-2.5 hover:bg-amber-100 transition-colors duration-300">
+            <img src="./images/lights.png" class="w-full" alt="" />
+            <h3 class="text-3xl text-[#3A3A3A] font-medium mt-4 mb-3">Flex Tripod</h3>
+            <h4 class="text-2xl text-gray-500 font-normal font-inter">$50.48</h4>
+            <div class="flex items-center">
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <img src="./images/star.svg" class="w-6" alt="" />
+              <p class="ml-4 font-bold text-gray-800">4.99</p>
+            </div>
+            <p class="leading-8 text-gray-500 ">
               Wordwide shifting <br />
               available <br />Buyers protection possible!
             </p>
           </div>
 
-          <div class="card border-2 border-gray-300 rounded-lg p-2.5">
-            <img src="./images/action.png" class="w-full" alt="" />
-            <h3 class="text-3xl text-[#3A3A3A] font-medium">Flex Tripod</h3>
-            <h4>$50.48</h4>
-            <div class="text-2xl text-[#3A3A3A] font-normal font-inter">
-              <img src="./images/star" class="rounded-lg" alt="" />
-            </div>
-            <p>
-              Wordwide shifting <br />
-              available <br />Buyers protection possible!
-            </p>
-          </div>
-
-          <div class="card border-2 border-gray-300 rounded-lg p-2.5">
-            <img src="./images/action.png" class="w-full" alt="" />
-            <h3 class="text-3xl text-[#3A3A3A] font-medium">Flex Tripod</h3>
-            <h4>$50.48</h4>
-            <div class="text-2xl text-[#3A3A3A] font-normal font-inter">
-              <img src="./images/star" class="rounded-lg" alt="" />
-            </div>
-            <p>
-              Wordwide shifting <br />
-              available <br />Buyers protection possible!
-            </p>
-          </div>
         </div>
+        <h4 class="text-right text-[#E02C6D] font-bold text-2xl mt-[50px]"><a href="#">See More <i class="fa-solid fa-arrow-right"></i></a></h4>
       </section>
     </main>
   </body>

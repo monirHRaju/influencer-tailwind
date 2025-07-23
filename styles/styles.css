@@ -4,6 +4,7 @@ body {
 }
 section {
   margin: 150px auto;
+  /* width: 1110px; */
   max-width: 1110px;
 }
 /* .container {
@@ -18,7 +19,6 @@ section {
   font-weight: 400;
   font-style: normal;
 }
-
 .hero-right {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -29,11 +29,22 @@ section {
 }
 .banner-image {
   /* centering images with positions */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@media screen and (max-width: 768px) {
+  .hero-right{
+    margin-top: 200px;
+  }
+  .hero{
+    margin-bottom: 200px;
+  }
+  
 }
+
 
 /* common styles */
 
